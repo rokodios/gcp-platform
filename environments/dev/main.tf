@@ -1,4 +1,4 @@
-provider "google" {
+psprovider "google" {
   project = var.project
   region  = var.region
 }
@@ -14,7 +14,7 @@ module "vm" {
   network_name  = module.vpc.network_name
   labels = {
     environment = "dev"
-    department  = "devel"
+    department  = "devops"
   }
   instances = [
     {
