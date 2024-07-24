@@ -4,13 +4,13 @@ psprovider "google" {
 }
 
 module "vpc" {
-  source       = "../modules/vpc"
+  source       = "../../modules/vpc"
   project_id   = var.project
   network_name = "dev-vpc-devopso"
 }
 
 module "vm" {
-  source        = "../modules/vm"
+  source        = "../../modules/vm"
   network_name  = module.vpc.network_name
   labels = {
     environment = "dev"
