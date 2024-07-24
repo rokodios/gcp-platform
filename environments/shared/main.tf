@@ -6,7 +6,7 @@ provider "google" {
 module "vpc" {
   source = "../../modules/vpc"
   project_id = var.project
-  network_name = "shared-vpc"
+  network_name = "shared-vpc-devopso"
   labels = {
     environment = "shared"
   }
