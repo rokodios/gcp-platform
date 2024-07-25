@@ -3,11 +3,6 @@ variable "project_id" {
   type        = string
 }
 
-variable "region" {
-  description = "The region to deploy resources"
-  type        = string
-}
-
 variable "environment" {
   description = "Environment label for the instances"
   type        = string
@@ -30,7 +25,7 @@ variable "instances" {
     {
       name         = "dev-vm-test"
       machine_type = "f1-micro"
-      zone         = "us-central1"
+      zone         = "us-central1-a"
       image        = "debian-cloud/debian-10"
     }
   ]
