@@ -30,7 +30,7 @@ variable "instances" {
     {
       name         = "dev-vm-test"
       machine_type = "f1-micro"
-      zone         = "us-east1"
+      zone         = "us-central1"
       image        = "debian-cloud/debian-10"
     }
   ]
