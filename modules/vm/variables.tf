@@ -9,13 +9,18 @@ variable "region" {
 }
 
 variable "network_name" {
-  description = "The name of the network to attach the instances"
+  description = "The name of the network to deploy resources"
   type        = string
 }
 
-variable "labels" {
-  description = "Labels to apply to the instances"
-  type        = map(string)
+variable "environment" {
+  description = "Environment label for the instances"
+  type        = string
+}
+
+variable "department" {
+  description = "Department label for the instances"
+  type        = string
 }
 
 variable "instances" {
