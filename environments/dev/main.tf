@@ -14,9 +14,7 @@ module "vm" {
   project_id    = var.project_id
   region        = "us-central1"
   network_name  = module.vpc.network_name
-  labels = {
-    environment = var.environment
-    department  = var.department
-  }
-  instances = var.instances
+  environment   = var.environment
+  department    = var.department
+  instances     = var.instances
 }
