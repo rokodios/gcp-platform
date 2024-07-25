@@ -1,27 +1,22 @@
 provider "google" {
-  project = var.project
+  project = var.project_id
   region  = var.region
 }
 
 module "vpc" {
-  source       = "../../modules/vpc"
-  project_id   = var.project
-  network_name = "dev-vpc-devopso"
+  source  = "../../modules/vpc"
+  project_id = var.project_id
+  region     = var.region
 }
 
 module "vm" {
   source        = "../../modules/vm"
+  project_id    = var.project_id
+  region        = var.region
   network_name  = module.vpc.network_name
   labels = {
-    environment = "dev"
-    department  = "devops"
+    environment = var.environment
+    department  = var.department
   }
-  instances = [
-    {
-      name         = "dev-vm-test"
-      machine_type = "f1-micro"
-      zone         = "us-east1"
-      image        = "debian-cloud/debian-10"
-    }
-  ]
+  instances = var.instances
 }
