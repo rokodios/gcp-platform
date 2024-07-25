@@ -8,8 +8,12 @@ variable "network_name" {
   type        = string
 }
 
-variable "labels" {
-  description = "A map of labels to assign to the resource"
-  type        = map(string)
-  default     = {}
+variable "environment" {
+  description = "Environment label for the instances"
+  type        = string
+}
+
+variable "department" {
+  description = "Department label for the instances"
+  type        = string
 }
