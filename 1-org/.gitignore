@@ -22,17 +22,11 @@ Session.vim
 ### https://raw.github.com/github/gitignore/90f149de451a5433aebd94d02d11b0e28843a1af/Terraform.gitignore
 
 # Local .terraform directories
-**/.terraform*
+**/.terraform/*
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
-# Local tfvars terraform.tfvars
-**/*.tfvars
-
-# tf lock file
-**/.terraform.lock.hcl
 
 # Crash log files
 crash.log
@@ -57,26 +51,8 @@ override.tf.json
 **/.kitchen
 **/.kitchen.local.yml
 **/Gemfile.lock
-# Plan files
-**/tmp_plan
-**/.tmp
-**/tmp
-
-test/fixtures/shared/terraform.tfvars
-
-test/integration/gcloud/config.sh
-test/integration/tmp
 
 credentials.json
 
-helpers/foundation-deployer/foundation-deployer
-helpers/foundation-deployer/.steps.json
-
 # File to populate env vars used by Docker test runs
 .envrc
-
-# Handle files generated on sed command by old (2013-) MacOS versions
-*.tf-e
-
-# Go multi-module workspace sum
-go.work.sum
