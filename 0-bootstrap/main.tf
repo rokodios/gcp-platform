@@ -35,7 +35,7 @@ locals {
 }
 
 resource "google_folder" "bootstrap" {
-  display_name = "bootstrap"
+  display_name = "bootstrap-shared"
   parent       = local.parent
 }
 
