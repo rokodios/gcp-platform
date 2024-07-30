@@ -146,11 +146,6 @@ variable "initial_group_config" {
   default     = "WITH_INITIAL_OWNER"
 }
 
-variable "billing_project" {
-  description = "The project ID for billing"
-  type        = string
-}
-
 /* ----------------------------------------
     Specific to github_bootstrap
    ---------------------------------------- */

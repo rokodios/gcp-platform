@@ -17,13 +17,13 @@
 org_id = "654895707348" # format "000000000000"
 
 billing_account = "01E8C3-648768-F913FC" # format "000000-000000-000000"
-billing_project = "prj-b-cicd-431007"
+
 // For enabling the automatic groups creation, uncoment the
 // variables and update the values with the group names
 groups = {
    create_required_groups = true # Change to true to create the required_groups
-  # create_optional_groups = false # Change to true to create the optional_groups
-  # billing_project        = "REPLACE_ME"  # Fill to create required or optional groups
+   create_optional_groups = false # Change to true to create the optional_groups
+   billing_project = "prj-b-cicd-431007"  # Fill to create required or optional groups
   required_groups = {
     group_org_admins     = "gcp-organization-admins@devopso.org" # example "gcp-organization-admins@example.com"
     group_billing_admins = "gcp-billing-admins@devopso.org" # example "gcp-billing-admins@example.com"
