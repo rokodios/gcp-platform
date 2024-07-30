@@ -35,7 +35,7 @@ locals {
 }
 
 resource "google_folder" "bootstrap" {
-  display_name = "${var.folder_prefix}-bootstrap"
+  display_name = "bootstrap"
   parent       = local.parent
 }
 
@@ -43,10 +43,12 @@ module "seed_bootstrap" {
   source  = "terraform-google-modules/bootstrap/google"
   version = "~> 8.0"
 
-  org_id                         = var.org_id
-  folder_id                      = google_folder.bootstrap.id
-  project_id                     = "${var.project_prefix}-b-seed"
-  state_bucket_name              = "${var.bucket_prefix}-${var.project_prefix}-b-seed-tfstate"
+  org_id                         = "654895707348"
+  folder_id                      = "638338393761"
+  #project_id                     = "${var.project_prefix}-b-seed"
+  project_id                     = "prj-b-cicd-431007"
+  #state_bucket_name              = "${var.bucket_prefix}-${var.project_prefix}-b-seed-tfstate"
+  state_bucket_name              = "devopso-shared-tfstate"
   force_destroy                  = var.bucket_force_destroy
   billing_account                = var.billing_account
   group_org_admins               = var.groups.required_groups.group_org_admins
@@ -67,7 +69,7 @@ module "seed_bootstrap" {
     application_name  = "seed-bootstrap"
     billing_code      = "1234"
     primary_contact   = "atorres@devopso.org"
-    #secondary_contact = "example2"
+    #secondary_contact = "angeltorresnavarro91@gmail.com"
     business_code     = "shared"
     env_code          = "b"
     vpc               = "none"

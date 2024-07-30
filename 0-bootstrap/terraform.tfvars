@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-org_id = "REPLACE_ME" # format "000000000000"
+org_id = "654895707348" # format "000000000000"
 
-billing_account = "REPLACE_ME" # format "000000-000000-000000"
+billing_account = "01E8C3-648768-F913FC" # format "000000-000000-000000"
 
 // For enabling the automatic groups creation, uncoment the
 // variables and update the values with the group names
 groups = {
-  # create_required_groups = false # Change to true to create the required_groups
+   create_required_groups = true # Change to true to create the required_groups
   # create_optional_groups = false # Change to true to create the optional_groups
   # billing_project        = "REPLACE_ME"  # Fill to create required or optional groups
   required_groups = {
-    group_org_admins     = "REPLACE_ME" # example "gcp-organization-admins@example.com"
-    group_billing_admins = "REPLACE_ME" # example "gcp-billing-admins@example.com"
-    billing_data_users   = "REPLACE_ME" # example "gcp-billing-data@example.com"
-    audit_data_users     = "REPLACE_ME" # example "gcp-audit-data@example.com"
+    group_org_admins     = "gcp-organization-admins@devopso.org" # example "gcp-organization-admins@example.com"
+    group_billing_admins = "gcp-billing-admins@devopso.org" # example "gcp-billing-admins@example.com"
+    billing_data_users   = "gcp-billing-data@devopso.org" # example "gcp-billing-data@example.com"
+    audit_data_users     = "gcp-audit-data@devopso.org" # example "gcp-audit-data@example.com"
   }
   # optional_groups = {
   #   gcp_security_reviewer      = "" #"gcp_security_reviewer_local_test@example.com"
@@ -40,7 +40,7 @@ groups = {
 }
 
 default_region     = "us-central1"
-default_region_2   = "us-west1"
+#default_region_2   = "us-west1"
 default_region_gcs = "US"
 default_region_kms = "us"
 

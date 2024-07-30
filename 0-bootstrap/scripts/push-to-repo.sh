@@ -34,8 +34,8 @@ cp "${DOCKERFILE_PATH}" "${tmp_dir}"
 pushd "${tmp_dir}"
 git config credential.helper gcloud.sh
 git config init.defaultBranch main
-git config user.email "terraform-robot@example.com"
-git config user.name "TF Robot"
+git config user.email "angeltorresnavarro91@gmail.com"
+git config user.name "rokodios"
 git checkout main || git checkout -b main
 git add Dockerfile
 git commit -m "Initialize tf dockerfile repo"
