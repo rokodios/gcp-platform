@@ -123,7 +123,7 @@ module "tf_source" {
     environment       = "bootstrap"
     application_name  = "cloudbuild-bootstrap"
     billing_code      = "1234"
-    primary_contact   = "atorres@devopso.lab"
+    primary_contact   = "atorres"
     #secondary_contact = "example2"
     business_code     = "shared"
     env_code          = "pro"

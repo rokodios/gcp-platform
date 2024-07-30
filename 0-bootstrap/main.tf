@@ -70,10 +70,10 @@ module "seed_bootstrap" {
     environment       = "bootstrap"
     application_name  = "seed-bootstrap"
     billing_code      = "1234"
-    primary_contact   = "atorres@devopso.org"
+    primary_contact   = "atorres"
     #secondary_contact = "angeltorresnavarro91@gmail.com"
     business_code     = "shared"
-    env_code          = "b"
+    env_code          = "pro"
     vpc               = "none"
   }
 
