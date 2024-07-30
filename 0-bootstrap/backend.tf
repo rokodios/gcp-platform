@@ -18,6 +18,5 @@ terraform {
   backend "gcs" {
     bucket = "devopso-shared-tfstate"
     prefix = "terraform/bootstrap/state"
-    project = "prj-b-seed-431007"
   }
 }
