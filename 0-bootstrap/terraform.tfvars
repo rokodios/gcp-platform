@@ -17,7 +17,7 @@
 org_id = "654895707348" # format "000000000000"
 
 billing_account = "01E8C3-648768-F913FC" # format "000000-000000-000000"
-
+billing_project = "prj-b-cicd-431007"
 // For enabling the automatic groups creation, uncoment the
 // variables and update the values with the group names
 groups = {

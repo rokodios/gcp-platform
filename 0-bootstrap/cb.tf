@@ -123,10 +123,10 @@ module "tf_source" {
     environment       = "bootstrap"
     application_name  = "cloudbuild-bootstrap"
     billing_code      = "1234"
-    primary_contact   = "example1"
-    secondary_contact = "example2"
+    primary_contact   = "atorres@devopso.lab"
+    #secondary_contact = "example2"
     business_code     = "shared"
-    env_code          = "b"
+    env_code          = "pro"
     vpc               = "none"
   }
 
