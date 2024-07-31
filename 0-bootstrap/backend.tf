@@ -16,7 +16,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "devopso-shared-tfstate"
+    bucket = "devopso-setup-tfstate"
     prefix = "terraform/bootstrap/state"
   }
 }
