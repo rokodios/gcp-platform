@@ -35,7 +35,7 @@ locals {
 }
 
 resource "google_folder" "bootstrap" {
-  display_name = "bootstrap-shared"
+  display_name = "bootstrap"
   parent       = local.parent
 }
 
@@ -47,9 +47,9 @@ module "seed_bootstrap" {
   folder_id                      = google_folder.bootstrap.id
   #org_id                         = "654895707348"
   #folder_id                      = "638338393761"
-  project_id                     = "${var.project_prefix}-p-seed"
+  project_id                     = "${var.project_prefix}-b-seed"
   #project_id                     = "prj-b-cicd-431007"
-  state_bucket_name              = "${var.bucket_prefix}-${var.project_prefix}-p-seed-tfstate"
+  state_bucket_name              = "${var.bucket_prefix}-${var.project_prefix}-b-seed-tfstate"
   #state_bucket_name              = "devopso-shared-tfstate"
   force_destroy                  = var.bucket_force_destroy
   billing_account                = var.billing_account

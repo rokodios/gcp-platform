@@ -90,7 +90,7 @@ module "tf_source" {
 
   org_id                = var.org_id
   folder_id             = google_folder.bootstrap.id
-  project_id            = "${var.project_prefix}-p-cicd-${random_string.suffix.result}"
+  project_id            = "${var.project_prefix}-b-cicd-${random_string.suffix.result}"
   location              = var.default_region
   billing_account       = var.billing_account
   group_org_admins      = var.groups.required_groups.group_org_admins

@@ -23,7 +23,7 @@ billing_account = "01E8C3-648768-F913FC" # format "000000-000000-000000"
 groups = {
    create_required_groups = false # Change to true to create the required_groups
    create_optional_groups = false # Change to true to create the optional_groups
-   billing_project = "prj-b-cicd-431007"  # Fill to create required or optional groups
+   billing_project = "setup-431112"  # Fill to create required or optional groups
   required_groups = {
     group_org_admins     = "gcp-organization-admins@devopso.org" # example "gcp-organization-admins@example.com"
     group_billing_admins = "gcp-billing-admins@devopso.org" # example "gcp-billing-admins@example.com"
@@ -40,7 +40,7 @@ groups = {
 }
 
 default_region     = "us-central1"
-#default_region_2   = "us-west1"
+default_region_2   = "us-west1"
 default_region_gcs = "US"
 default_region_kms = "us"
 
